@@ -1,0 +1,22 @@
+flask:
+  name: flask
+  image:
+    name: flaskapp
+    tag: v1
+    exposePort: 5000
+  replicas: 3
+  service:
+    type: ClusterIP
+  env:
+    name: FLASK_ENV
+    value: development
+
+nginx: 
+  name: nginx-app
+  image:
+    name: flasknginxserver
+    tag: v4
+    exposePort: 80
+  replicas: 1
+  service:
+    type: LoadBalancer
