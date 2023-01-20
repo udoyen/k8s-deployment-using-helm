@@ -15,7 +15,7 @@
    - minikube addons enable ingress
    - minikube addons enable ingress-dns
 
-3. Deploy using helm command and locally stored nginx and flask images
+3. Deploy using helm command with locally stored nginx and flask images
 4. Steps to access Ingress
 
    - Append 127.0.0.1 hello-world.info to your /etc/hosts file on MacOS (NOTE: Do NOT use the Minikube IP)
